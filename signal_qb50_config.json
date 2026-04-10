@@ -1,0 +1,12 @@
+{
+  "sample_rate": 3000000,
+  "n_samples": 360000000,
+  "duration_s": 120.0,
+  "channels": 2,
+  "source": "qb50-436500kHz-2017-05-29-182529.wav",
+  "iq_mode": "stereo_direct",
+  "band_low_hz": 0.0,
+  "band_high_hz": 1500000.0,
+  "freq_center_mhz": 436.5,
+  "fft_size": 32768
+}

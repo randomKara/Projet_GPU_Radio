@@ -1,0 +1,19 @@
+# Build and executable
+build/
+radio_fft
+
+# Large data files (IQ recordings and outputs)
+*.bin
+*.wav
+*.bin.*
+output_*.bin
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Logs and temporary files
+*.log
+.DS_Store
+EOF
