@@ -4,7 +4,9 @@
 
 ## 1. Subject 5: GPU FFT processing for radio waves
 **Difficulty:** 6
-> *Implementing Fast Fourier Transform (FFT) on the GPU is a well-understood problem but applying it to process radio waves effectively...*
+> *Implementing Fast Fourier Transform (FFT) on the GPU is a well-understood problem but
+applying it to process radio waves effectively requires understanding signal processing and
+managing large data volumes efficiently.*
 
 ### Project Overview
 This project implements a high-performance signal processing pipeline designed to handle massive Software-Defined Radio (SDR) recordings from Low Earth Orbit (LEO) satellites. It specifically targets the **QB50 satellite constellation**, providing an automated workflow to detect satellite passes, analyze Doppler shifts, and generate high-resolution waterfall spectrograms. By leveraging **NVIDIA CUDA**, the engine performs complex spectral analysis at speeds significantly exceeding real-time, even for datasets (like the 16GB QB50 recording) that exceed available system RAM.
@@ -30,7 +32,15 @@ The project is based on IQ recordings of the **QB50 satellite constellation**.
 - **Languages:** C++/CUDA for the compute engine, Python for signal conversion and visualization.
 - **Libraries:** cuFFT (Fast Fourier Transform), NumPy, Pillow (PIL).
 
-## 4. Logical Steps of the Pipeline
+## 4. Minimum System Requirements
+To run this pipeline successfully, the following baseline is required:
+- **OS**: Linux (Essential for shell scripts and file paths).
+- **GPU**: NVIDIA GPU with CUDA support (Compute Capability 6.1 or higher).
+- **VRAM**: 2 GB minimum (the streaming architecture is optimized for low-memory GPUs).
+- **RAM**: 4 GB minimum (the pipeline uses ~1GB of system RAM thanks to incremental processing).
+- **Disk Space**: At least 40 GB of free space (to hold the 16GB raw recording and generated outputs).
+
+## 5. Logical Steps of the Pipeline
 1.  **Data Ingestion**: Converting SatNOGS WAV files to raw Complex Float32 binary IQ format.
 2.  **GPU Streaming**: Loading small batches into Pinned Memory for fast PCIe transfer.
 3.  **Spectral Analysis**: Applying Windowing and performing FFT via cuFFT.
