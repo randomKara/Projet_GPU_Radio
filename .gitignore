@@ -15,5 +15,10 @@ __pycache__/
 
 # Logs and temporary files
 *.log
+!record.log
 .DS_Store
+
+# Generated configurations
+*_config.json
+signal_config.json
 EOF

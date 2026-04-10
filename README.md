@@ -43,7 +43,10 @@ The pipeline generates three primary visualizations via `plot_spectrogram.py`:
 - **Bottom Plot**: **CA-CFAR Persistence**. Shows the percentage of time a specific frequency exceeded the adaptive noise floor. Signals persistent for >30% of the time are flagged as detections.
 
 ## Installation & Usage
-1. **Requirements**: CUDA Toolkit, CMake, Python 3 (NumPy, Pillow), ffmpeg.
+1. **Requirements**: 
+   - **OS**: Linux (Ubuntu 22.04+ recommended)
+   - **Hardware**: NVIDIA GPU (Compute Capability 6.1+)
+   - **Software**: CUDA Toolkit (12.x or 13.x), CMake, Python 3 (NumPy, Pillow), ffmpeg.
 2. **Build**:
    ```bash
    ./build.sh
@@ -55,4 +58,4 @@ The pipeline generates three primary visualizations via `plot_spectrogram.py`:
    ```
 
 ---
-*GPU Radio Project - 2026*
+*GPU Radio Project - 2026 (Linux / CUDA)*

@@ -1,0 +1,1124 @@
+Script started on 2026-04-10 11:02:16+02:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="252" LINES="47"]
+[1m
+[31m        [37m_,met$$$$$gg.
+     ,g$$$$$$$$$$$$$$$P.
+   ,g$$P""       """Y$$.".
+  ,$$P'              `$$$.
+',$$P       ,ggs.     `$$b:
+`d$$'     ,$P"'   [31m.[37m    $$$
+ $$P      d$'     [31m,[37m    $$P
+ $$:      $$.   [31m-[37m    ,d$$'
+ $$;      Y$b._   _,d$P'
+ Y$$.    [31m`.[37m`"Y$$$$P"'
+ `$$b      [31m"-.__
+  [37m`Y$$b
+   `Y$$.
+     `$$b.
+       `Y$$b.
+         `"Y$b._
+             `""""[m[1G[17A[m[?7l[31C
+[31C[m[1m[33m DISTRO[m[m 󰑃  [mDebian GNU/Linux 12 (bookworm) x86_64
+[31C[m[1m[33m│ ├[m[m 󰑃  [mLinux 6.1.0-44-amd64
+[31C[m[1m[33m│ ├󰏖[m[m 󰑃  [m3822 (dpkg)
+[31C[m[1m[33m│ ├[m[m 󰑃  [m386 days
+[31C[m[1m[33m│ └[m[m 󰑃  [mbash 5.2.15
+[31C[m[1m[34m DE/WM[m[m 󰑃  [mKWin (Wayland)
+[31C[m[1m[34m│ ├󰉼[m[m 󰑃  [mLayan
+[31C[m[1m[34m│ ├󰀻[m[m 󰑃  [mPapirus [Qt], Papirus [GTK2/3/4]
+[31C[m[1m[34m│ ├[m[m 󰑃  [mAdwaita (32px)
+[31C[m[1m[34m│ └[m[m 󰑃  [mscript
+[31C[m[1m[32m󰌢 SYSTEM[m[m 󰑃  [mXPS 15 9510
+[31C[m[1m[32m│ ├󰻠[m[m 󰑃  [m11th Gen Intel(R) Core(TM) i7-11800H (16) @ 4.60 GHz
+[31C[m[1m[32m│ ├󰻑[m[m 󰑃  [mGeForce RTX 3050 Ti Mobile[m
+[31C[m[1m[32m│ ├󰻑[m[m 󰑃  [mUHD Graphics[m
+[31C[m[1m[32m│ ├󰍹[m[m 󰑃  [m1920x1080 @ 60Hz, 2560x1440 @ 60Hz
+[31C[m[1m[32m│ ├󰾆[m[m 󰑃  [m11.74 GiB / 31.07 GiB ([32m38%[m)
+[31C[m[1m[32m│ ├󰓡[m[m 󰑃  [m242.75 MiB / 977.00 MiB ([32m25%[m)
+[31C[m[1m[32m│ ├󰅐[m[m 󰑃  [m5 mins
+[31C[m[1m[35m AUDIO[m[m 󰑃  [mScarlett Solo (3rd Gen.) Analog Stereo[m
+[31C[m[90m  [31m  [32m  [33m  [34m  [35m  [36m  [37m  [38m  [39m  [39m    [38m  [37m  [36m  [35m  [34m  [33m  [32m  [31m  [90m [m
+[31C
+[?7h[?2004h
+[38;2;59;66;82m[0m[48;2;59;66;82muser [48;2;67;76;94;38;2;59;66;82m[0m[48;2;67;76;94m …/Projet_GPU_Radio [48;2;76;86;106;38;2;67;76;94m[0m[48;2;76;86;106m  main ✘! [48;2;134;187;216;38;2;76;86;106m[48;2;6;150;154;38;2;134;187;216m[48;2;51;101;138;38;2;6;150;154m[0m[48;2;51;101;138m 11:02 [0m[38;2;51;101;138m [0mexit./process_qb50_segments.sh[16Pbuild.sh
+[?2004l-- The CXX compiler identification is GNU 12.2.0
+-- The CUDA compiler identification is NVIDIA 13.2.51
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting CUDA compiler ABI info
+-- Detecting CUDA compiler ABI info - done
+-- Check for working CUDA compiler: /usr/local/cuda-13.2/bin/nvcc - skipped
+-- Detecting CUDA compile features
+-- Detecting CUDA compile features - done
+-- Found CUDAToolkit: /usr/local/cuda-13.2/include (found suitable version "13.2.51", minimum required is "13.2") 
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Configuring done
+-- Generating done
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CUDA_TOOLKIT_ROOT_DIR
+
+[0m
+-- Build files have been written to: /home/user/workspace/cours/Projet_GPU_Radio/build
+[ 50%] [32mBuilding CUDA object CMakeFiles/radio_fft.dir/main.cu.o[0m
+[100%] [32m[1mLinking CUDA executable radio_fft[0m
+[100%] Built target radio_fft
+
+Build successful!
+To run with satellite data, use: ./process_qb50_segments.sh
+
+[?2004h
+[38;2;59;66;82m[0m[48;2;59;66;82muser [48;2;67;76;94;38;2;59;66;82m[0m[48;2;67;76;94m …/Projet_GPU_Radio [48;2;76;86;106;38;2;67;76;94m[0m[48;2;76;86;106m  main ✘!? [48;2;134;187;216;38;2;76;86;106m[48;2;6;150;154;38;2;134;187;216m[48;2;51;101;138;38;2;6;150;154m[0m[48;2;51;101;138m 11:03 [0m[38;2;51;101;138m [0m[7m./process_qb50_segments.sh[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./process_qb50_segments.sh h
+[?2004l==========================================
+Traitement QB50 par segments (300 s)
+==========================================
+
+[SEGMENT 1/5] 0 → 300s
+============================================================
+  IQ Signal → GPU Converter (streaming)
+============================================================
+  Fichier      : qb50-436500kHz-2017-05-29-182529.wav
+  Sample rate  : 3,000,000 Hz (3.0 Msps)
+  Canaux       : 2 (IQ stéréo)
+  Durée totale : 1388.1 s
+  Extraction   : 0.0s → 300.0s (300.0s)
+  Streaming vers signal_seg1.bin...
+[48;5;0m[38;5;207m[wav @ 0x55bee2825880] [0m[48;5;0m[38;5;226mEstimating duration from bitrate, this may be inaccurate
+[0m[48;5;0m[38;5;226mGuessed Channel Layout for Input Stream #0.0 : stereo
+[0m  [OK] 900,000,000 IQ samples (7200.0 MB)
+  Config JSON  : signal_seg1_config.json
+
+  FFT_SIZE        : 32768 bins
+  Résolution FFT  : 91.6 Hz/bin
+  Doppler ±10 kHz ≈ ±109 bins
+  Centre freq     : 436.5 MHz
+============================================================
+GPU Radio Signal Processing
+
+[GPU 0] NVIDIA GeForce RTX 3050 Ti Laptop GPU | Arch 8.6 | VRAM 3772 MB
+[CONFIG] JSON chargé : 3000000.0 Hz, FFT_SIZE=32768
+
+[CONFIG] Fichier cible   : signal_seg1.bin
+[CONFIG] Fenêtre         : Blackman-Harris
+[CONFIG] Sample Rate     : 3000000.0 Hz
+[CONFIG] FFT Size        : 32768
+[CONFIG] FFTs/Batch      : 341 (VRAM optimisé)
+[CONFIG] Passe-bande     : 0.00 — 1500000.00 Hz
+[CONFIG] CFAR guard/ref  : 4 / 16, seuil 10.0 dB
+[CONFIG] Sparse seuil   : -30.0 dB
+
+--- Chargement signal_seg1.bin (streaming) ---
+[INFO] 900000000 IQ samples | 6866.5 MB
+
+Mode Full Streaming activé
+[INFO] 81 batches (80×11173888 + 6088960 restants)
+
+Pipeline asynchrone H2D ∥ Compute ∥ D2H
+
+--- Pipeline en cours ---
+[BATCH   1/ 81] Streaming OK | Offset:          0 | Samples: 11173888
+[BATCH   2/ 81] Streaming OK | Offset:   11173888 | Samples: 11173888
+[BATCH   3/ 81] Streaming OK | Offset:   22347776 | Samples: 11173888
+[BATCH   4/ 81] Streaming OK | Offset:   33521664 | Samples: 11173888
+[BATCH   5/ 81] Streaming OK | Offset:   44695552 | Samples: 11173888
+[BATCH   6/ 81] Streaming OK | Offset:   55869440 | Samples: 11173888
+[BATCH   7/ 81] Streaming OK | Offset:   67043328 | Samples: 11173888
+[BATCH   8/ 81] Streaming OK | Offset:   78217216 | Samples: 11173888
+[BATCH   9/ 81] Streaming OK | Offset:   89391104 | Samples: 11173888
+[BATCH  10/ 81] Streaming OK | Offset:  100564992 | Samples: 11173888
+[BATCH  11/ 81] Streaming OK | Offset:  111738880 | Samples: 11173888
+[BATCH  12/ 81] Streaming OK | Offset:  122912768 | Samples: 11173888
+[BATCH  13/ 81] Streaming OK | Offset:  134086656 | Samples: 11173888
+[BATCH  14/ 81] Streaming OK | Offset:  145260544 | Samples: 11173888
+[BATCH  15/ 81] Streaming OK | Offset:  156434432 | Samples: 11173888
+[BATCH  16/ 81] Streaming OK | Offset:  167608320 | Samples: 11173888
+[BATCH  17/ 81] Streaming OK | Offset:  178782208 | Samples: 11173888
+[BATCH  18/ 81] Streaming OK | Offset:  189956096 | Samples: 11173888
+[BATCH  19/ 81] Streaming OK | Offset:  201129984 | Samples: 11173888
+[BATCH  20/ 81] Streaming OK | Offset:  212303872 | Samples: 11173888
+[BATCH  21/ 81] Streaming OK | Offset:  223477760 | Samples: 11173888
+[BATCH  22/ 81] Streaming OK | Offset:  234651648 | Samples: 11173888
+[BATCH  23/ 81] Streaming OK | Offset:  245825536 | Samples: 11173888
+[BATCH  24/ 81] Streaming OK | Offset:  256999424 | Samples: 11173888
+[BATCH  25/ 81] Streaming OK | Offset:  268173312 | Samples: 11173888
+[BATCH  26/ 81] Streaming OK | Offset:  279347200 | Samples: 11173888
+[BATCH  27/ 81] Streaming OK | Offset:  290521088 | Samples: 11173888
+[BATCH  28/ 81] Streaming OK | Offset:  301694976 | Samples: 11173888
+[BATCH  29/ 81] Streaming OK | Offset:  312868864 | Samples: 11173888
+[BATCH  30/ 81] Streaming OK | Offset:  324042752 | Samples: 11173888
+[BATCH  31/ 81] Streaming OK | Offset:  335216640 | Samples: 11173888
+[BATCH  32/ 81] Streaming OK | Offset:  346390528 | Samples: 11173888
+[BATCH  33/ 81] Streaming OK | Offset:  357564416 | Samples: 11173888
+[BATCH  34/ 81] Streaming OK | Offset:  368738304 | Samples: 11173888
+[BATCH  35/ 81] Streaming OK | Offset:  379912192 | Samples: 11173888
+[BATCH  36/ 81] Streaming OK | Offset:  391086080 | Samples: 11173888
+[BATCH  37/ 81] Streaming OK | Offset:  402259968 | Samples: 11173888
+[BATCH  38/ 81] Streaming OK | Offset:  413433856 | Samples: 11173888
+[BATCH  39/ 81] Streaming OK | Offset:  424607744 | Samples: 11173888
+[BATCH  40/ 81] Streaming OK | Offset:  435781632 | Samples: 11173888
+[BATCH  41/ 81] Streaming OK | Offset:  446955520 | Samples: 11173888
+[BATCH  42/ 81] Streaming OK | Offset:  458129408 | Samples: 11173888
+[BATCH  43/ 81] Streaming OK | Offset:  469303296 | Samples: 11173888
+[BATCH  44/ 81] Streaming OK | Offset:  480477184 | Samples: 11173888
+[BATCH  45/ 81] Streaming OK | Offset:  491651072 | Samples: 11173888
+[BATCH  46/ 81] Streaming OK | Offset:  502824960 | Samples: 11173888
+[BATCH  47/ 81] Streaming OK | Offset:  513998848 | Samples: 11173888
+[BATCH  48/ 81] Streaming OK | Offset:  525172736 | Samples: 11173888
+[BATCH  49/ 81] Streaming OK | Offset:  536346624 | Samples: 11173888
+[BATCH  50/ 81] Streaming OK | Offset:  547520512 | Samples: 11173888
+[BATCH  51/ 81] Streaming OK | Offset:  558694400 | Samples: 11173888
+[BATCH  52/ 81] Streaming OK | Offset:  569868288 | Samples: 11173888
+[BATCH  53/ 81] Streaming OK | Offset:  581042176 | Samples: 11173888
+[BATCH  54/ 81] Streaming OK | Offset:  592216064 | Samples: 11173888
+[BATCH  55/ 81] Streaming OK | Offset:  603389952 | Samples: 11173888
+[BATCH  56/ 81] Streaming OK | Offset:  614563840 | Samples: 11173888
+[BATCH  57/ 81] Streaming OK | Offset:  625737728 | Samples: 11173888
+[BATCH  58/ 81] Streaming OK | Offset:  636911616 | Samples: 11173888
+[BATCH  59/ 81] Streaming OK | Offset:  648085504 | Samples: 11173888
+[BATCH  60/ 81] Streaming OK | Offset:  659259392 | Samples: 11173888
+[BATCH  61/ 81] Streaming OK | Offset:  670433280 | Samples: 11173888
+[BATCH  62/ 81] Streaming OK | Offset:  681607168 | Samples: 11173888
+[BATCH  63/ 81] Streaming OK | Offset:  692781056 | Samples: 11173888
+[BATCH  64/ 81] Streaming OK | Offset:  703954944 | Samples: 11173888
+[BATCH  65/ 81] Streaming OK | Offset:  715128832 | Samples: 11173888
+[BATCH  66/ 81] Streaming OK | Offset:  726302720 | Samples: 11173888
+[BATCH  67/ 81] Streaming OK | Offset:  737476608 | Samples: 11173888
+[BATCH  68/ 81] Streaming OK | Offset:  748650496 | Samples: 11173888
+[BATCH  69/ 81] Streaming OK | Offset:  759824384 | Samples: 11173888
+[BATCH  70/ 81] Streaming OK | Offset:  770998272 | Samples: 11173888
+[BATCH  71/ 81] Streaming OK | Offset:  782172160 | Samples: 11173888
+[BATCH  72/ 81] Streaming OK | Offset:  793346048 | Samples: 11173888
+[BATCH  73/ 81] Streaming OK | Offset:  804519936 | Samples: 11173888
+[BATCH  74/ 81] Streaming OK | Offset:  815693824 | Samples: 11173888
+[BATCH  75/ 81] Streaming OK | Offset:  826867712 | Samples: 11173888
+[BATCH  76/ 81] Streaming OK | Offset:  838041600 | Samples: 11173888
+[BATCH  77/ 81] Streaming OK | Offset:  849215488 | Samples: 11173888
+[BATCH  78/ 81] Streaming OK | Offset:  860389376 | Samples: 11173888
+[BATCH  79/ 81] Streaming OK | Offset:  871563264 | Samples: 11173888
+[BATCH  80/ 81] Streaming OK | Offset:  882737152 | Samples: 11173888
+[BATCH  81/ 81] Streaming OK | Offset:  893911040 | Samples:  6088960
+
+╔══════════════════════════════════════════════════════════════╗
+║                   Détections CA-CFAR                        ║
+╚══════════════════════════════════════════════════════════════╝
+  [DÉTECTION] Bin  997 | 0.091 MHz | présent 31% FFTs
+  [DÉTECTION] Bin 2735 | 0.250 MHz | présent 34% FFTs
+  [DÉTECTION] Bin 3777 | 0.346 MHz | présent 31% FFTs
+  [DÉTECTION] Bin 4820 | 0.441 MHz | présent 35% FFTs
+  [DÉTECTION] Bin 11037 | 1.010 MHz | présent 40% FFTs
+  [DÉTECTION] Bin 16368 | 1.499 MHz | présent 52% FFTs
+  [DÉTECTION] Bin 16369 | 1.499 MHz | présent 70% FFTs
+  [DÉTECTION] Bin 16370 | 1.499 MHz | présent 83% FFTs
+  [DÉTECTION] Bin 16371 | 1.499 MHz | présent 91% FFTs
+  [DÉTECTION] Bin 16372 | 1.499 MHz | présent 95% FFTs
+  [DÉTECTION] Bin 16373 | 1.499 MHz | présent 97% FFTs
+  [DÉTECTION] Bin 16374 | 1.499 MHz | présent 99% FFTs
+  [DÉTECTION] Bin 16375 | 1.499 MHz | présent 99% FFTs
+  [DÉTECTION] Bin 16376 | 1.499 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16377 | 1.499 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16378 | 1.499 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16379 | 1.500 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16380 | 1.500 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16381 | 1.500 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16382 | 1.500 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16383 | 1.500 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16384 | 1.500 MHz | présent 100% FFTs
+Analyse de Performance GPU
+Pipeline Total       : 20403.73 ms
+Débit global         :    44.1 MSamples/sec
+Fenêtrage Blackman-Harris : 14.497 ms
+cuFFT C2C Batch        :  2.159 ms
+Filtre Passe-Bande     :  0.267 ms
+Magnitude (dB)         :  0.806 ms
+Détection CA-CFAR      :  1.089 ms
+
+[OK] Fichiers binaires sauvegardés incrémentalement.
+
+[SUCCESS] Pipeline GPU terminé avec succès !
+Chargement output_spectrogram.bin...
+Sparse: 449,362,455 bins conservés / 899,973,120 (49.93%)
+============================================================
+  RAPPORT SPECTROGRAMME - ANALYSE DOPPLER
+============================================================
+  Source          : qb50-436500kHz-2017-05-29-182529.wav
+  FFTs total      : 27465
+  FFT size        : 32768 bins
+  Résolution freq : 91.6 Hz/bin (0.092 kHz)
+  Durée couverte  : 299.99 s
+  Plage spectrale : 436.500 — 438.000 MHz
+  Centre freq     : 436.500 MHz
+  Magnitude       : -100.0 / 42.8 dB
+
+  Doppler ±10 kHz = ±109 bins visibles
+
+  CFAR : 21 bins persistants (>30% FFTs)
+    Bin   997 | 436.5913 MHz | 31%
+    Bin  2735 | 436.7504 MHz | 34%
+    Bin  3777 | 436.8458 MHz | 31%
+    Bin  4820 | 436.9413 MHz | 35%
+    Bin 11037 | 437.5105 MHz | 40%
+    Bin 16368 | 437.9985 MHz | 52%
+    Bin 16369 | 437.9986 MHz | 70%
+    Bin 16370 | 437.9987 MHz | 83%
+    Bin 16371 | 437.9988 MHz | 91%
+    Bin 16372 | 437.9989 MHz | 95%
+    ... et 11 autres bins
+============================================================
+[OK] captures/spectrogram.png
+[OK] captures/spectrogram_doppler.png
+[OK] captures/spectrum_avg.png
+
+Terminé — 3 images générées.
+[OK] Segment 1 terminé
+
+[SEGMENT 2/5] 300 → 600s
+============================================================
+  IQ Signal → GPU Converter (streaming)
+============================================================
+  Fichier      : qb50-436500kHz-2017-05-29-182529.wav
+  Sample rate  : 3,000,000 Hz (3.0 Msps)
+  Canaux       : 2 (IQ stéréo)
+  Durée totale : 1388.1 s
+  Extraction   : 300.0s → 600.0s (300.0s)
+  Streaming vers signal_seg2.bin...
+[48;5;0m[38;5;207m[wav @ 0x55bbbe5cb880] [0m[48;5;0m[38;5;226mEstimating duration from bitrate, this may be inaccurate
+[0m[48;5;0m[38;5;226mGuessed Channel Layout for Input Stream #0.0 : stereo
+[0m  [OK] 900,000,000 IQ samples (7200.0 MB)
+  Config JSON  : signal_seg2_config.json
+
+  FFT_SIZE        : 32768 bins
+  Résolution FFT  : 91.6 Hz/bin
+  Doppler ±10 kHz ≈ ±109 bins
+  Centre freq     : 436.5 MHz
+============================================================
+GPU Radio Signal Processing
+
+[GPU 0] NVIDIA GeForce RTX 3050 Ti Laptop GPU | Arch 8.6 | VRAM 3772 MB
+[CONFIG] JSON chargé : 3000000.0 Hz, FFT_SIZE=32768
+
+[CONFIG] Fichier cible   : signal_seg2.bin
+[CONFIG] Fenêtre         : Blackman-Harris
+[CONFIG] Sample Rate     : 3000000.0 Hz
+[CONFIG] FFT Size        : 32768
+[CONFIG] FFTs/Batch      : 341 (VRAM optimisé)
+[CONFIG] Passe-bande     : 0.00 — 1500000.00 Hz
+[CONFIG] CFAR guard/ref  : 4 / 16, seuil 10.0 dB
+[CONFIG] Sparse seuil   : -30.0 dB
+
+--- Chargement signal_seg2.bin (streaming) ---
+[INFO] 900000000 IQ samples | 6866.5 MB
+
+Mode Full Streaming activé
+[INFO] 81 batches (80×11173888 + 6088960 restants)
+
+Pipeline asynchrone H2D ∥ Compute ∥ D2H
+
+--- Pipeline en cours ---
+[BATCH   1/ 81] Streaming OK | Offset:          0 | Samples: 11173888
+[BATCH   2/ 81] Streaming OK | Offset:   11173888 | Samples: 11173888
+[BATCH   3/ 81] Streaming OK | Offset:   22347776 | Samples: 11173888
+[BATCH   4/ 81] Streaming OK | Offset:   33521664 | Samples: 11173888
+[BATCH   5/ 81] Streaming OK | Offset:   44695552 | Samples: 11173888
+[BATCH   6/ 81] Streaming OK | Offset:   55869440 | Samples: 11173888
+[BATCH   7/ 81] Streaming OK | Offset:   67043328 | Samples: 11173888
+[BATCH   8/ 81] Streaming OK | Offset:   78217216 | Samples: 11173888
+[BATCH   9/ 81] Streaming OK | Offset:   89391104 | Samples: 11173888
+[BATCH  10/ 81] Streaming OK | Offset:  100564992 | Samples: 11173888
+[BATCH  11/ 81] Streaming OK | Offset:  111738880 | Samples: 11173888
+[BATCH  12/ 81] Streaming OK | Offset:  122912768 | Samples: 11173888
+[BATCH  13/ 81] Streaming OK | Offset:  134086656 | Samples: 11173888
+[BATCH  14/ 81] Streaming OK | Offset:  145260544 | Samples: 11173888
+[BATCH  15/ 81] Streaming OK | Offset:  156434432 | Samples: 11173888
+[BATCH  16/ 81] Streaming OK | Offset:  167608320 | Samples: 11173888
+[BATCH  17/ 81] Streaming OK | Offset:  178782208 | Samples: 11173888
+[BATCH  18/ 81] Streaming OK | Offset:  189956096 | Samples: 11173888
+[BATCH  19/ 81] Streaming OK | Offset:  201129984 | Samples: 11173888
+[BATCH  20/ 81] Streaming OK | Offset:  212303872 | Samples: 11173888
+[BATCH  21/ 81] Streaming OK | Offset:  223477760 | Samples: 11173888
+[BATCH  22/ 81] Streaming OK | Offset:  234651648 | Samples: 11173888
+[BATCH  23/ 81] Streaming OK | Offset:  245825536 | Samples: 11173888
+[BATCH  24/ 81] Streaming OK | Offset:  256999424 | Samples: 11173888
+[BATCH  25/ 81] Streaming OK | Offset:  268173312 | Samples: 11173888
+[BATCH  26/ 81] Streaming OK | Offset:  279347200 | Samples: 11173888
+[BATCH  27/ 81] Streaming OK | Offset:  290521088 | Samples: 11173888
+[BATCH  28/ 81] Streaming OK | Offset:  301694976 | Samples: 11173888
+[BATCH  29/ 81] Streaming OK | Offset:  312868864 | Samples: 11173888
+[BATCH  30/ 81] Streaming OK | Offset:  324042752 | Samples: 11173888
+[BATCH  31/ 81] Streaming OK | Offset:  335216640 | Samples: 11173888
+[BATCH  32/ 81] Streaming OK | Offset:  346390528 | Samples: 11173888
+[BATCH  33/ 81] Streaming OK | Offset:  357564416 | Samples: 11173888
+[BATCH  34/ 81] Streaming OK | Offset:  368738304 | Samples: 11173888
+[BATCH  35/ 81] Streaming OK | Offset:  379912192 | Samples: 11173888
+[BATCH  36/ 81] Streaming OK | Offset:  391086080 | Samples: 11173888
+[BATCH  37/ 81] Streaming OK | Offset:  402259968 | Samples: 11173888
+[BATCH  38/ 81] Streaming OK | Offset:  413433856 | Samples: 11173888
+[BATCH  39/ 81] Streaming OK | Offset:  424607744 | Samples: 11173888
+[BATCH  40/ 81] Streaming OK | Offset:  435781632 | Samples: 11173888
+[BATCH  41/ 81] Streaming OK | Offset:  446955520 | Samples: 11173888
+[BATCH  42/ 81] Streaming OK | Offset:  458129408 | Samples: 11173888
+[BATCH  43/ 81] Streaming OK | Offset:  469303296 | Samples: 11173888
+[BATCH  44/ 81] Streaming OK | Offset:  480477184 | Samples: 11173888
+[BATCH  45/ 81] Streaming OK | Offset:  491651072 | Samples: 11173888
+[BATCH  46/ 81] Streaming OK | Offset:  502824960 | Samples: 11173888
+[BATCH  47/ 81] Streaming OK | Offset:  513998848 | Samples: 11173888
+[BATCH  48/ 81] Streaming OK | Offset:  525172736 | Samples: 11173888
+[BATCH  49/ 81] Streaming OK | Offset:  536346624 | Samples: 11173888
+[BATCH  50/ 81] Streaming OK | Offset:  547520512 | Samples: 11173888
+[BATCH  51/ 81] Streaming OK | Offset:  558694400 | Samples: 11173888
+[BATCH  52/ 81] Streaming OK | Offset:  569868288 | Samples: 11173888
+[BATCH  53/ 81] Streaming OK | Offset:  581042176 | Samples: 11173888
+[BATCH  54/ 81] Streaming OK | Offset:  592216064 | Samples: 11173888
+[BATCH  55/ 81] Streaming OK | Offset:  603389952 | Samples: 11173888
+[BATCH  56/ 81] Streaming OK | Offset:  614563840 | Samples: 11173888
+[BATCH  57/ 81] Streaming OK | Offset:  625737728 | Samples: 11173888
+[BATCH  58/ 81] Streaming OK | Offset:  636911616 | Samples: 11173888
+[BATCH  59/ 81] Streaming OK | Offset:  648085504 | Samples: 11173888
+[BATCH  60/ 81] Streaming OK | Offset:  659259392 | Samples: 11173888
+[BATCH  61/ 81] Streaming OK | Offset:  670433280 | Samples: 11173888
+[BATCH  62/ 81] Streaming OK | Offset:  681607168 | Samples: 11173888
+[BATCH  63/ 81] Streaming OK | Offset:  692781056 | Samples: 11173888
+[BATCH  64/ 81] Streaming OK | Offset:  703954944 | Samples: 11173888
+[BATCH  65/ 81] Streaming OK | Offset:  715128832 | Samples: 11173888
+[BATCH  66/ 81] Streaming OK | Offset:  726302720 | Samples: 11173888
+[BATCH  67/ 81] Streaming OK | Offset:  737476608 | Samples: 11173888
+[BATCH  68/ 81] Streaming OK | Offset:  748650496 | Samples: 11173888
+[BATCH  69/ 81] Streaming OK | Offset:  759824384 | Samples: 11173888
+[BATCH  70/ 81] Streaming OK | Offset:  770998272 | Samples: 11173888
+[BATCH  71/ 81] Streaming OK | Offset:  782172160 | Samples: 11173888
+[BATCH  72/ 81] Streaming OK | Offset:  793346048 | Samples: 11173888
+[BATCH  73/ 81] Streaming OK | Offset:  804519936 | Samples: 11173888
+[BATCH  74/ 81] Streaming OK | Offset:  815693824 | Samples: 11173888
+[BATCH  75/ 81] Streaming OK | Offset:  826867712 | Samples: 11173888
+[BATCH  76/ 81] Streaming OK | Offset:  838041600 | Samples: 11173888
+[BATCH  77/ 81] Streaming OK | Offset:  849215488 | Samples: 11173888
+[BATCH  78/ 81] Streaming OK | Offset:  860389376 | Samples: 11173888
+[BATCH  79/ 81] Streaming OK | Offset:  871563264 | Samples: 11173888
+[BATCH  80/ 81] Streaming OK | Offset:  882737152 | Samples: 11173888
+[BATCH  81/ 81] Streaming OK | Offset:  893911040 | Samples:  6088960
+
+╔══════════════════════════════════════════════════════════════╗
+║                   Détections CA-CFAR                        ║
+╚══════════════════════════════════════════════════════════════╝
+  [DÉTECTION] Bin  301 | 0.028 MHz | présent 34% FFTs
+  [DÉTECTION] Bin  302 | 0.028 MHz | présent 66% FFTs
+  [DÉTECTION] Bin  996 | 0.091 MHz | présent 42% FFTs
+  [DÉTECTION] Bin  997 | 0.091 MHz | présent 75% FFTs
+  [DÉTECTION] Bin  998 | 0.091 MHz | présent 36% FFTs
+  [DÉTECTION] Bin 1692 | 0.155 MHz | présent 57% FFTs
+  [DÉTECTION] Bin 2039 | 0.187 MHz | présent 59% FFTs
+  [DÉTECTION] Bin 2040 | 0.187 MHz | présent 55% FFTs
+  [DÉTECTION] Bin 2734 | 0.250 MHz | présent 67% FFTs
+  [DÉTECTION] Bin 2735 | 0.250 MHz | présent 62% FFTs
+  [DÉTECTION] Bin 3776 | 0.346 MHz | présent 46% FFTs
+  [DÉTECTION] Bin 3777 | 0.346 MHz | présent 77% FFTs
+  [DÉTECTION] Bin 3778 | 0.346 MHz | présent 37% FFTs
+  [DÉTECTION] Bin 4819 | 0.441 MHz | présent 66% FFTs
+  [DÉTECTION] Bin 4820 | 0.441 MHz | présent 61% FFTs
+  [DÉTECTION] Bin 5166 | 0.473 MHz | présent 35% FFTs
+  [DÉTECTION] Bin 5167 | 0.473 MHz | présent 67% FFTs
+  [DÉTECTION] Bin 5168 | 0.473 MHz | présent 30% FFTs
+  [DÉTECTION] Bin 6209 | 0.568 MHz | présent 62% FFTs
+  [DÉTECTION] Bin 6210 | 0.569 MHz | présent 58% FFTs
+  [DÉTECTION] Bin 6556 | 0.600 MHz | présent 42% FFTs
+  [DÉTECTION] Bin 6557 | 0.600 MHz | présent 74% FFTs
+  [DÉTECTION] Bin 6558 | 0.600 MHz | présent 36% FFTs
+  [DÉTECTION] Bin 6904 | 0.632 MHz | présent 39% FFTs
+  [DÉTECTION] Bin 6905 | 0.632 MHz | présent 36% FFTs
+  [DÉTECTION] Bin 7947 | 0.728 MHz | présent 43% FFTs
+  [DÉTECTION] Bin 8294 | 0.759 MHz | présent 60% FFTs
+  [DÉTECTION] Bin 8295 | 0.759 MHz | présent 56% FFTs
+  [DÉTECTION] Bin 8641 | 0.791 MHz | présent 39% FFTs
+  [DÉTECTION] Bin 8642 | 0.791 MHz | présent 71% FFTs
+  [DÉTECTION] Bin 8643 | 0.791 MHz | présent 33% FFTs
+  [DÉTECTION] Bin 8989 | 0.823 MHz | présent 59% FFTs
+  [DÉTECTION] Bin 8990 | 0.823 MHz | présent 54% FFTs
+  [DÉTECTION] Bin 9337 | 0.855 MHz | présent 57% FFTs
+  [DÉTECTION] Bin 9684 | 0.887 MHz | présent 39% FFTs
+  [DÉTECTION] Bin 9685 | 0.887 MHz | présent 36% FFTs
+  [DÉTECTION] Bin 10032 | 0.918 MHz | présent 34% FFTs
+  [DÉTECTION] Bin 16368 | 1.499 MHz | présent 51% FFTs
+  [DÉTECTION] Bin 16369 | 1.499 MHz | présent 69% FFTs
+  [DÉTECTION] Bin 16370 | 1.499 MHz | présent 83% FFTs
+  [DÉTECTION] Bin 16371 | 1.499 MHz | présent 91% FFTs
+  [DÉTECTION] Bin 16372 | 1.499 MHz | présent 95% FFTs
+  [DÉTECTION] Bin 16373 | 1.499 MHz | présent 97% FFTs
+  [DÉTECTION] Bin 16374 | 1.499 MHz | présent 99% FFTs
+  [DÉTECTION] Bin 16375 | 1.499 MHz | présent 99% FFTs
+  [DÉTECTION] Bin 16376 | 1.499 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16377 | 1.499 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16378 | 1.499 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16379 | 1.500 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16380 | 1.500 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16381 | 1.500 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16382 | 1.500 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16383 | 1.500 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16384 | 1.500 MHz | présent 100% FFTs
+Analyse de Performance GPU
+Pipeline Total       : 21638.33 ms
+Débit global         :    41.6 MSamples/sec
+Fenêtrage Blackman-Harris : 14.716 ms
+cuFFT C2C Batch        :  2.159 ms
+Filtre Passe-Bande     :  0.265 ms
+Magnitude (dB)         :  0.807 ms
+Détection CA-CFAR      :  1.087 ms
+
+[OK] Fichiers binaires sauvegardés incrémentalement.
+
+[SUCCESS] Pipeline GPU terminé avec succès !
+Chargement output_spectrogram.bin...
+Sparse: 449,436,047 bins conservés / 899,973,120 (49.94%)
+============================================================
+  RAPPORT SPECTROGRAMME - ANALYSE DOPPLER
+============================================================
+  Source          : qb50-436500kHz-2017-05-29-182529.wav
+  FFTs total      : 27465
+  FFT size        : 32768 bins
+  Résolution freq : 91.6 Hz/bin (0.092 kHz)
+  Durée couverte  : 299.99 s
+  Plage spectrale : 436.500 — 438.000 MHz
+  Centre freq     : 436.500 MHz
+  Magnitude       : -100.0 / 40.5 dB
+
+  Doppler ±10 kHz = ±109 bins visibles
+
+  CFAR : 53 bins persistants (>30% FFTs)
+    Bin   301 | 436.5276 MHz | 34%
+    Bin   302 | 436.5276 MHz | 66%
+    Bin   996 | 436.5912 MHz | 42%
+    Bin   997 | 436.5913 MHz | 75%
+    Bin   998 | 436.5914 MHz | 36%
+    Bin  1692 | 436.6549 MHz | 57%
+    Bin  2039 | 436.6867 MHz | 59%
+    Bin  2040 | 436.6868 MHz | 55%
+    Bin  2734 | 436.7503 MHz | 67%
+    Bin  2735 | 436.7504 MHz | 62%
+    ... et 43 autres bins
+============================================================
+[OK] captures/spectrogram.png
+[OK] captures/spectrogram_doppler.png
+[OK] captures/spectrum_avg.png
+
+Terminé — 3 images générées.
+[OK] Segment 2 terminé
+
+[SEGMENT 3/5] 600 → 900s
+============================================================
+  IQ Signal → GPU Converter (streaming)
+============================================================
+  Fichier      : qb50-436500kHz-2017-05-29-182529.wav
+  Sample rate  : 3,000,000 Hz (3.0 Msps)
+  Canaux       : 2 (IQ stéréo)
+  Durée totale : 1388.1 s
+  Extraction   : 600.0s → 900.0s (300.0s)
+  Streaming vers signal_seg3.bin...
+[48;5;0m[38;5;207m[wav @ 0x559e120fd880] [0m[48;5;0m[38;5;226mEstimating duration from bitrate, this may be inaccurate
+[0m[48;5;0m[38;5;226mGuessed Channel Layout for Input Stream #0.0 : stereo
+[0m  [OK] 900,000,000 IQ samples (7200.0 MB)
+  Config JSON  : signal_seg3_config.json
+
+  FFT_SIZE        : 32768 bins
+  Résolution FFT  : 91.6 Hz/bin
+  Doppler ±10 kHz ≈ ±109 bins
+  Centre freq     : 436.5 MHz
+============================================================
+GPU Radio Signal Processing
+
+[GPU 0] NVIDIA GeForce RTX 3050 Ti Laptop GPU | Arch 8.6 | VRAM 3772 MB
+[CONFIG] JSON chargé : 3000000.0 Hz, FFT_SIZE=32768
+
+[CONFIG] Fichier cible   : signal_seg3.bin
+[CONFIG] Fenêtre         : Blackman-Harris
+[CONFIG] Sample Rate     : 3000000.0 Hz
+[CONFIG] FFT Size        : 32768
+[CONFIG] FFTs/Batch      : 341 (VRAM optimisé)
+[CONFIG] Passe-bande     : 0.00 — 1500000.00 Hz
+[CONFIG] CFAR guard/ref  : 4 / 16, seuil 10.0 dB
+[CONFIG] Sparse seuil   : -30.0 dB
+
+--- Chargement signal_seg3.bin (streaming) ---
+[INFO] 900000000 IQ samples | 6866.5 MB
+
+Mode Full Streaming activé
+[INFO] 81 batches (80×11173888 + 6088960 restants)
+
+Pipeline asynchrone H2D ∥ Compute ∥ D2H
+
+--- Pipeline en cours ---
+[BATCH   1/ 81] Streaming OK | Offset:          0 | Samples: 11173888
+[BATCH   2/ 81] Streaming OK | Offset:   11173888 | Samples: 11173888
+[BATCH   3/ 81] Streaming OK | Offset:   22347776 | Samples: 11173888
+[BATCH   4/ 81] Streaming OK | Offset:   33521664 | Samples: 11173888
+[BATCH   5/ 81] Streaming OK | Offset:   44695552 | Samples: 11173888
+[BATCH   6/ 81] Streaming OK | Offset:   55869440 | Samples: 11173888
+[BATCH   7/ 81] Streaming OK | Offset:   67043328 | Samples: 11173888
+[BATCH   8/ 81] Streaming OK | Offset:   78217216 | Samples: 11173888
+[BATCH   9/ 81] Streaming OK | Offset:   89391104 | Samples: 11173888
+[BATCH  10/ 81] Streaming OK | Offset:  100564992 | Samples: 11173888
+[BATCH  11/ 81] Streaming OK | Offset:  111738880 | Samples: 11173888
+[BATCH  12/ 81] Streaming OK | Offset:  122912768 | Samples: 11173888
+[BATCH  13/ 81] Streaming OK | Offset:  134086656 | Samples: 11173888
+[BATCH  14/ 81] Streaming OK | Offset:  145260544 | Samples: 11173888
+[BATCH  15/ 81] Streaming OK | Offset:  156434432 | Samples: 11173888
+[BATCH  16/ 81] Streaming OK | Offset:  167608320 | Samples: 11173888
+[BATCH  17/ 81] Streaming OK | Offset:  178782208 | Samples: 11173888
+[BATCH  18/ 81] Streaming OK | Offset:  189956096 | Samples: 11173888
+[BATCH  19/ 81] Streaming OK | Offset:  201129984 | Samples: 11173888
+[BATCH  20/ 81] Streaming OK | Offset:  212303872 | Samples: 11173888
+[BATCH  21/ 81] Streaming OK | Offset:  223477760 | Samples: 11173888
+[BATCH  22/ 81] Streaming OK | Offset:  234651648 | Samples: 11173888
+[BATCH  23/ 81] Streaming OK | Offset:  245825536 | Samples: 11173888
+[BATCH  24/ 81] Streaming OK | Offset:  256999424 | Samples: 11173888
+[BATCH  25/ 81] Streaming OK | Offset:  268173312 | Samples: 11173888
+[BATCH  26/ 81] Streaming OK | Offset:  279347200 | Samples: 11173888
+[BATCH  27/ 81] Streaming OK | Offset:  290521088 | Samples: 11173888
+[BATCH  28/ 81] Streaming OK | Offset:  301694976 | Samples: 11173888
+[BATCH  29/ 81] Streaming OK | Offset:  312868864 | Samples: 11173888
+[BATCH  30/ 81] Streaming OK | Offset:  324042752 | Samples: 11173888
+[BATCH  31/ 81] Streaming OK | Offset:  335216640 | Samples: 11173888
+[BATCH  32/ 81] Streaming OK | Offset:  346390528 | Samples: 11173888
+[BATCH  33/ 81] Streaming OK | Offset:  357564416 | Samples: 11173888
+[BATCH  34/ 81] Streaming OK | Offset:  368738304 | Samples: 11173888
+[BATCH  35/ 81] Streaming OK | Offset:  379912192 | Samples: 11173888
+[BATCH  36/ 81] Streaming OK | Offset:  391086080 | Samples: 11173888
+[BATCH  37/ 81] Streaming OK | Offset:  402259968 | Samples: 11173888
+[BATCH  38/ 81] Streaming OK | Offset:  413433856 | Samples: 11173888
+[BATCH  39/ 81] Streaming OK | Offset:  424607744 | Samples: 11173888
+[BATCH  40/ 81] Streaming OK | Offset:  435781632 | Samples: 11173888
+[BATCH  41/ 81] Streaming OK | Offset:  446955520 | Samples: 11173888
+[BATCH  42/ 81] Streaming OK | Offset:  458129408 | Samples: 11173888
+[BATCH  43/ 81] Streaming OK | Offset:  469303296 | Samples: 11173888
+[BATCH  44/ 81] Streaming OK | Offset:  480477184 | Samples: 11173888
+[BATCH  45/ 81] Streaming OK | Offset:  491651072 | Samples: 11173888
+[BATCH  46/ 81] Streaming OK | Offset:  502824960 | Samples: 11173888
+[BATCH  47/ 81] Streaming OK | Offset:  513998848 | Samples: 11173888
+[BATCH  48/ 81] Streaming OK | Offset:  525172736 | Samples: 11173888
+[BATCH  49/ 81] Streaming OK | Offset:  536346624 | Samples: 11173888
+[BATCH  50/ 81] Streaming OK | Offset:  547520512 | Samples: 11173888
+[BATCH  51/ 81] Streaming OK | Offset:  558694400 | Samples: 11173888
+[BATCH  52/ 81] Streaming OK | Offset:  569868288 | Samples: 11173888
+[BATCH  53/ 81] Streaming OK | Offset:  581042176 | Samples: 11173888
+[BATCH  54/ 81] Streaming OK | Offset:  592216064 | Samples: 11173888
+[BATCH  55/ 81] Streaming OK | Offset:  603389952 | Samples: 11173888
+[BATCH  56/ 81] Streaming OK | Offset:  614563840 | Samples: 11173888
+[BATCH  57/ 81] Streaming OK | Offset:  625737728 | Samples: 11173888
+[BATCH  58/ 81] Streaming OK | Offset:  636911616 | Samples: 11173888
+[BATCH  59/ 81] Streaming OK | Offset:  648085504 | Samples: 11173888
+[BATCH  60/ 81] Streaming OK | Offset:  659259392 | Samples: 11173888
+[BATCH  61/ 81] Streaming OK | Offset:  670433280 | Samples: 11173888
+[BATCH  62/ 81] Streaming OK | Offset:  681607168 | Samples: 11173888
+[BATCH  63/ 81] Streaming OK | Offset:  692781056 | Samples: 11173888
+[BATCH  64/ 81] Streaming OK | Offset:  703954944 | Samples: 11173888
+[BATCH  65/ 81] Streaming OK | Offset:  715128832 | Samples: 11173888
+[BATCH  66/ 81] Streaming OK | Offset:  726302720 | Samples: 11173888
+[BATCH  67/ 81] Streaming OK | Offset:  737476608 | Samples: 11173888
+[BATCH  68/ 81] Streaming OK | Offset:  748650496 | Samples: 11173888
+[BATCH  69/ 81] Streaming OK | Offset:  759824384 | Samples: 11173888
+[BATCH  70/ 81] Streaming OK | Offset:  770998272 | Samples: 11173888
+[BATCH  71/ 81] Streaming OK | Offset:  782172160 | Samples: 11173888
+[BATCH  72/ 81] Streaming OK | Offset:  793346048 | Samples: 11173888
+[BATCH  73/ 81] Streaming OK | Offset:  804519936 | Samples: 11173888
+[BATCH  74/ 81] Streaming OK | Offset:  815693824 | Samples: 11173888
+[BATCH  75/ 81] Streaming OK | Offset:  826867712 | Samples: 11173888
+[BATCH  76/ 81] Streaming OK | Offset:  838041600 | Samples: 11173888
+[BATCH  77/ 81] Streaming OK | Offset:  849215488 | Samples: 11173888
+[BATCH  78/ 81] Streaming OK | Offset:  860389376 | Samples: 11173888
+[BATCH  79/ 81] Streaming OK | Offset:  871563264 | Samples: 11173888
+[BATCH  80/ 81] Streaming OK | Offset:  882737152 | Samples: 11173888
+[BATCH  81/ 81] Streaming OK | Offset:  893911040 | Samples:  6088960
+
+╔══════════════════════════════════════════════════════════════╗
+║                   Détections CA-CFAR                        ║
+╚══════════════════════════════════════════════════════════════╝
+  [DÉTECTION] Bin  301 | 0.028 MHz | présent 40% FFTs
+  [DÉTECTION] Bin  302 | 0.028 MHz | présent 41% FFTs
+  [DÉTECTION] Bin  996 | 0.091 MHz | présent 46% FFTs
+  [DÉTECTION] Bin  997 | 0.091 MHz | présent 47% FFTs
+  [DÉTECTION] Bin 1691 | 0.155 MHz | présent 33% FFTs
+  [DÉTECTION] Bin 1692 | 0.155 MHz | présent 34% FFTs
+  [DÉTECTION] Bin 2039 | 0.187 MHz | présent 46% FFTs
+  [DÉTECTION] Bin 2734 | 0.250 MHz | présent 50% FFTs
+  [DÉTECTION] Bin 3776 | 0.346 MHz | présent 47% FFTs
+  [DÉTECTION] Bin 3777 | 0.346 MHz | présent 48% FFTs
+  [DÉTECTION] Bin 4819 | 0.441 MHz | présent 53% FFTs
+  [DÉTECTION] Bin 4820 | 0.441 MHz | présent 30% FFTs
+  [DÉTECTION] Bin 5166 | 0.473 MHz | présent 40% FFTs
+  [DÉTECTION] Bin 5167 | 0.473 MHz | présent 41% FFTs
+  [DÉTECTION] Bin 6209 | 0.568 MHz | présent 47% FFTs
+  [DÉTECTION] Bin 6556 | 0.600 MHz | présent 44% FFTs
+  [DÉTECTION] Bin 6557 | 0.600 MHz | présent 45% FFTs
+  [DÉTECTION] Bin 6904 | 0.632 MHz | présent 32% FFTs
+  [DÉTECTION] Bin 8294 | 0.759 MHz | présent 46% FFTs
+  [DÉTECTION] Bin 8641 | 0.791 MHz | présent 43% FFTs
+  [DÉTECTION] Bin 8642 | 0.791 MHz | présent 43% FFTs
+  [DÉTECTION] Bin 8989 | 0.823 MHz | présent 46% FFTs
+  [DÉTECTION] Bin 9336 | 0.855 MHz | présent 33% FFTs
+  [DÉTECTION] Bin 9337 | 0.855 MHz | présent 34% FFTs
+  [DÉTECTION] Bin 9684 | 0.887 MHz | présent 31% FFTs
+  [DÉTECTION] Bin 16368 | 1.499 MHz | présent 50% FFTs
+  [DÉTECTION] Bin 16369 | 1.499 MHz | présent 69% FFTs
+  [DÉTECTION] Bin 16370 | 1.499 MHz | présent 83% FFTs
+  [DÉTECTION] Bin 16371 | 1.499 MHz | présent 91% FFTs
+  [DÉTECTION] Bin 16372 | 1.499 MHz | présent 95% FFTs
+  [DÉTECTION] Bin 16373 | 1.499 MHz | présent 97% FFTs
+  [DÉTECTION] Bin 16374 | 1.499 MHz | présent 99% FFTs
+  [DÉTECTION] Bin 16375 | 1.499 MHz | présent 99% FFTs
+  [DÉTECTION] Bin 16376 | 1.499 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16377 | 1.499 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16378 | 1.499 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16379 | 1.500 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16380 | 1.500 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16381 | 1.500 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16382 | 1.500 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16383 | 1.500 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16384 | 1.500 MHz | présent 100% FFTs
+Analyse de Performance GPU
+Pipeline Total       : 20105.55 ms
+Débit global         :    44.8 MSamples/sec
+Fenêtrage Blackman-Harris : 14.650 ms
+cuFFT C2C Batch        :  2.163 ms
+Filtre Passe-Bande     :  0.265 ms
+Magnitude (dB)         :  0.805 ms
+Détection CA-CFAR      :  1.089 ms
+
+[OK] Fichiers binaires sauvegardés incrémentalement.
+
+[SUCCESS] Pipeline GPU terminé avec succès !
+Chargement output_spectrogram.bin...
+Sparse: 449,385,039 bins conservés / 899,973,120 (49.93%)
+============================================================
+  RAPPORT SPECTROGRAMME - ANALYSE DOPPLER
+============================================================
+  Source          : qb50-436500kHz-2017-05-29-182529.wav
+  FFTs total      : 27465
+  FFT size        : 32768 bins
+  Résolution freq : 91.6 Hz/bin (0.092 kHz)
+  Durée couverte  : 299.99 s
+  Plage spectrale : 436.500 — 438.000 MHz
+  Centre freq     : 436.500 MHz
+  Magnitude       : -100.0 / 34.5 dB
+
+  Doppler ±10 kHz = ±109 bins visibles
+
+  CFAR : 41 bins persistants (>30% FFTs)
+    Bin   301 | 436.5276 MHz | 40%
+    Bin   302 | 436.5276 MHz | 41%
+    Bin   996 | 436.5912 MHz | 46%
+    Bin   997 | 436.5913 MHz | 47%
+    Bin  1691 | 436.6548 MHz | 33%
+    Bin  1692 | 436.6549 MHz | 34%
+    Bin  2039 | 436.6867 MHz | 46%
+    Bin  2734 | 436.7503 MHz | 50%
+    Bin  3776 | 436.8457 MHz | 47%
+    Bin  3777 | 436.8458 MHz | 48%
+    ... et 31 autres bins
+============================================================
+[OK] captures/spectrogram.png
+[OK] captures/spectrogram_doppler.png
+[OK] captures/spectrum_avg.png
+
+Terminé — 3 images générées.
+[OK] Segment 3 terminé
+
+[SEGMENT 4/5] 900 → 1200s
+============================================================
+  IQ Signal → GPU Converter (streaming)
+============================================================
+  Fichier      : qb50-436500kHz-2017-05-29-182529.wav
+  Sample rate  : 3,000,000 Hz (3.0 Msps)
+  Canaux       : 2 (IQ stéréo)
+  Durée totale : 1388.1 s
+  Extraction   : 900.0s → 1200.0s (300.0s)
+  Streaming vers signal_seg4.bin...
+[48;5;0m[38;5;207m[wav @ 0x5594ae5d9880] [0m[48;5;0m[38;5;226mEstimating duration from bitrate, this may be inaccurate
+[0m[48;5;0m[38;5;226mGuessed Channel Layout for Input Stream #0.0 : stereo
+[0m  [OK] 900,000,000 IQ samples (7200.0 MB)
+  Config JSON  : signal_seg4_config.json
+
+  FFT_SIZE        : 32768 bins
+  Résolution FFT  : 91.6 Hz/bin
+  Doppler ±10 kHz ≈ ±109 bins
+  Centre freq     : 436.5 MHz
+============================================================
+GPU Radio Signal Processing
+
+[GPU 0] NVIDIA GeForce RTX 3050 Ti Laptop GPU | Arch 8.6 | VRAM 3772 MB
+[CONFIG] JSON chargé : 3000000.0 Hz, FFT_SIZE=32768
+
+[CONFIG] Fichier cible   : signal_seg4.bin
+[CONFIG] Fenêtre         : Blackman-Harris
+[CONFIG] Sample Rate     : 3000000.0 Hz
+[CONFIG] FFT Size        : 32768
+[CONFIG] FFTs/Batch      : 341 (VRAM optimisé)
+[CONFIG] Passe-bande     : 0.00 — 1500000.00 Hz
+[CONFIG] CFAR guard/ref  : 4 / 16, seuil 10.0 dB
+[CONFIG] Sparse seuil   : -30.0 dB
+
+--- Chargement signal_seg4.bin (streaming) ---
+[INFO] 900000000 IQ samples | 6866.5 MB
+
+Mode Full Streaming activé
+[INFO] 81 batches (80×11173888 + 6088960 restants)
+
+Pipeline asynchrone H2D ∥ Compute ∥ D2H
+
+--- Pipeline en cours ---
+[BATCH   1/ 81] Streaming OK | Offset:          0 | Samples: 11173888
+[BATCH   2/ 81] Streaming OK | Offset:   11173888 | Samples: 11173888
+[BATCH   3/ 81] Streaming OK | Offset:   22347776 | Samples: 11173888
+[BATCH   4/ 81] Streaming OK | Offset:   33521664 | Samples: 11173888
+[BATCH   5/ 81] Streaming OK | Offset:   44695552 | Samples: 11173888
+[BATCH   6/ 81] Streaming OK | Offset:   55869440 | Samples: 11173888
+[BATCH   7/ 81] Streaming OK | Offset:   67043328 | Samples: 11173888
+[BATCH   8/ 81] Streaming OK | Offset:   78217216 | Samples: 11173888
+[BATCH   9/ 81] Streaming OK | Offset:   89391104 | Samples: 11173888
+[BATCH  10/ 81] Streaming OK | Offset:  100564992 | Samples: 11173888
+[BATCH  11/ 81] Streaming OK | Offset:  111738880 | Samples: 11173888
+[BATCH  12/ 81] Streaming OK | Offset:  122912768 | Samples: 11173888
+[BATCH  13/ 81] Streaming OK | Offset:  134086656 | Samples: 11173888
+[BATCH  14/ 81] Streaming OK | Offset:  145260544 | Samples: 11173888
+[BATCH  15/ 81] Streaming OK | Offset:  156434432 | Samples: 11173888
+[BATCH  16/ 81] Streaming OK | Offset:  167608320 | Samples: 11173888
+[BATCH  17/ 81] Streaming OK | Offset:  178782208 | Samples: 11173888
+[BATCH  18/ 81] Streaming OK | Offset:  189956096 | Samples: 11173888
+[BATCH  19/ 81] Streaming OK | Offset:  201129984 | Samples: 11173888
+[BATCH  20/ 81] Streaming OK | Offset:  212303872 | Samples: 11173888
+[BATCH  21/ 81] Streaming OK | Offset:  223477760 | Samples: 11173888
+[BATCH  22/ 81] Streaming OK | Offset:  234651648 | Samples: 11173888
+[BATCH  23/ 81] Streaming OK | Offset:  245825536 | Samples: 11173888
+[BATCH  24/ 81] Streaming OK | Offset:  256999424 | Samples: 11173888
+[BATCH  25/ 81] Streaming OK | Offset:  268173312 | Samples: 11173888
+[BATCH  26/ 81] Streaming OK | Offset:  279347200 | Samples: 11173888
+[BATCH  27/ 81] Streaming OK | Offset:  290521088 | Samples: 11173888
+[BATCH  28/ 81] Streaming OK | Offset:  301694976 | Samples: 11173888
+[BATCH  29/ 81] Streaming OK | Offset:  312868864 | Samples: 11173888
+[BATCH  30/ 81] Streaming OK | Offset:  324042752 | Samples: 11173888
+[BATCH  31/ 81] Streaming OK | Offset:  335216640 | Samples: 11173888
+[BATCH  32/ 81] Streaming OK | Offset:  346390528 | Samples: 11173888
+[BATCH  33/ 81] Streaming OK | Offset:  357564416 | Samples: 11173888
+[BATCH  34/ 81] Streaming OK | Offset:  368738304 | Samples: 11173888
+[BATCH  35/ 81] Streaming OK | Offset:  379912192 | Samples: 11173888
+[BATCH  36/ 81] Streaming OK | Offset:  391086080 | Samples: 11173888
+[BATCH  37/ 81] Streaming OK | Offset:  402259968 | Samples: 11173888
+[BATCH  38/ 81] Streaming OK | Offset:  413433856 | Samples: 11173888
+[BATCH  39/ 81] Streaming OK | Offset:  424607744 | Samples: 11173888
+[BATCH  40/ 81] Streaming OK | Offset:  435781632 | Samples: 11173888
+[BATCH  41/ 81] Streaming OK | Offset:  446955520 | Samples: 11173888
+[BATCH  42/ 81] Streaming OK | Offset:  458129408 | Samples: 11173888
+[BATCH  43/ 81] Streaming OK | Offset:  469303296 | Samples: 11173888
+[BATCH  44/ 81] Streaming OK | Offset:  480477184 | Samples: 11173888
+[BATCH  45/ 81] Streaming OK | Offset:  491651072 | Samples: 11173888
+[BATCH  46/ 81] Streaming OK | Offset:  502824960 | Samples: 11173888
+[BATCH  47/ 81] Streaming OK | Offset:  513998848 | Samples: 11173888
+[BATCH  48/ 81] Streaming OK | Offset:  525172736 | Samples: 11173888
+[BATCH  49/ 81] Streaming OK | Offset:  536346624 | Samples: 11173888
+[BATCH  50/ 81] Streaming OK | Offset:  547520512 | Samples: 11173888
+[BATCH  51/ 81] Streaming OK | Offset:  558694400 | Samples: 11173888
+[BATCH  52/ 81] Streaming OK | Offset:  569868288 | Samples: 11173888
+[BATCH  53/ 81] Streaming OK | Offset:  581042176 | Samples: 11173888
+[BATCH  54/ 81] Streaming OK | Offset:  592216064 | Samples: 11173888
+[BATCH  55/ 81] Streaming OK | Offset:  603389952 | Samples: 11173888
+[BATCH  56/ 81] Streaming OK | Offset:  614563840 | Samples: 11173888
+[BATCH  57/ 81] Streaming OK | Offset:  625737728 | Samples: 11173888
+[BATCH  58/ 81] Streaming OK | Offset:  636911616 | Samples: 11173888
+[BATCH  59/ 81] Streaming OK | Offset:  648085504 | Samples: 11173888
+[BATCH  60/ 81] Streaming OK | Offset:  659259392 | Samples: 11173888
+[BATCH  61/ 81] Streaming OK | Offset:  670433280 | Samples: 11173888
+[BATCH  62/ 81] Streaming OK | Offset:  681607168 | Samples: 11173888
+[BATCH  63/ 81] Streaming OK | Offset:  692781056 | Samples: 11173888
+[BATCH  64/ 81] Streaming OK | Offset:  703954944 | Samples: 11173888
+[BATCH  65/ 81] Streaming OK | Offset:  715128832 | Samples: 11173888
+[BATCH  66/ 81] Streaming OK | Offset:  726302720 | Samples: 11173888
+[BATCH  67/ 81] Streaming OK | Offset:  737476608 | Samples: 11173888
+[BATCH  68/ 81] Streaming OK | Offset:  748650496 | Samples: 11173888
+[BATCH  69/ 81] Streaming OK | Offset:  759824384 | Samples: 11173888
+[BATCH  70/ 81] Streaming OK | Offset:  770998272 | Samples: 11173888
+[BATCH  71/ 81] Streaming OK | Offset:  782172160 | Samples: 11173888
+[BATCH  72/ 81] Streaming OK | Offset:  793346048 | Samples: 11173888
+[BATCH  73/ 81] Streaming OK | Offset:  804519936 | Samples: 11173888
+[BATCH  74/ 81] Streaming OK | Offset:  815693824 | Samples: 11173888
+[BATCH  75/ 81] Streaming OK | Offset:  826867712 | Samples: 11173888
+[BATCH  76/ 81] Streaming OK | Offset:  838041600 | Samples: 11173888
+[BATCH  77/ 81] Streaming OK | Offset:  849215488 | Samples: 11173888
+[BATCH  78/ 81] Streaming OK | Offset:  860389376 | Samples: 11173888
+[BATCH  79/ 81] Streaming OK | Offset:  871563264 | Samples: 11173888
+[BATCH  80/ 81] Streaming OK | Offset:  882737152 | Samples: 11173888
+[BATCH  81/ 81] Streaming OK | Offset:  893911040 | Samples:  6088960
+
+╔══════════════════════════════════════════════════════════════╗
+║                   Détections CA-CFAR                        ║
+╚══════════════════════════════════════════════════════════════╝
+  [DÉTECTION] Bin  996 | 0.091 MHz | présent 34% FFTs
+  [DÉTECTION] Bin 2039 | 0.187 MHz | présent 33% FFTs
+  [DÉTECTION] Bin 2734 | 0.250 MHz | présent 36% FFTs
+  [DÉTECTION] Bin 3776 | 0.346 MHz | présent 37% FFTs
+  [DÉTECTION] Bin 3777 | 0.346 MHz | présent 31% FFTs
+  [DÉTECTION] Bin 4819 | 0.441 MHz | présent 36% FFTs
+  [DÉTECTION] Bin 6209 | 0.568 MHz | présent 33% FFTs
+  [DÉTECTION] Bin 6556 | 0.600 MHz | présent 34% FFTs
+  [DÉTECTION] Bin 8294 | 0.759 MHz | présent 32% FFTs
+  [DÉTECTION] Bin 8641 | 0.791 MHz | présent 31% FFTs
+  [DÉTECTION] Bin 8989 | 0.823 MHz | présent 30% FFTs
+  [DÉTECTION] Bin 16368 | 1.499 MHz | présent 51% FFTs
+  [DÉTECTION] Bin 16369 | 1.499 MHz | présent 70% FFTs
+  [DÉTECTION] Bin 16370 | 1.499 MHz | présent 83% FFTs
+  [DÉTECTION] Bin 16371 | 1.499 MHz | présent 91% FFTs
+  [DÉTECTION] Bin 16372 | 1.499 MHz | présent 95% FFTs
+  [DÉTECTION] Bin 16373 | 1.499 MHz | présent 98% FFTs
+  [DÉTECTION] Bin 16374 | 1.499 MHz | présent 99% FFTs
+  [DÉTECTION] Bin 16375 | 1.499 MHz | présent 99% FFTs
+  [DÉTECTION] Bin 16376 | 1.499 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16377 | 1.499 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16378 | 1.499 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16379 | 1.500 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16380 | 1.500 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16381 | 1.500 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16382 | 1.500 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16383 | 1.500 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16384 | 1.500 MHz | présent 100% FFTs
+Analyse de Performance GPU
+Pipeline Total       : 20055.20 ms
+Débit global         :    44.9 MSamples/sec
+Fenêtrage Blackman-Harris : 14.402 ms
+cuFFT C2C Batch        :  2.159 ms
+Filtre Passe-Bande     :  0.265 ms
+Magnitude (dB)         :  0.813 ms
+Détection CA-CFAR      :  1.089 ms
+
+[OK] Fichiers binaires sauvegardés incrémentalement.
+
+[SUCCESS] Pipeline GPU terminé avec succès !
+Chargement output_spectrogram.bin...
+Sparse: 449,445,008 bins conservés / 899,973,120 (49.94%)
+============================================================
+  RAPPORT SPECTROGRAMME - ANALYSE DOPPLER
+============================================================
+  Source          : qb50-436500kHz-2017-05-29-182529.wav
+  FFTs total      : 27465
+  FFT size        : 32768 bins
+  Résolution freq : 91.6 Hz/bin (0.092 kHz)
+  Durée couverte  : 299.99 s
+  Plage spectrale : 436.500 — 438.000 MHz
+  Centre freq     : 436.500 MHz
+  Magnitude       : -100.0 / 37.0 dB
+
+  Doppler ±10 kHz = ±109 bins visibles
+
+  CFAR : 27 bins persistants (>30% FFTs)
+    Bin   996 | 436.5912 MHz | 34%
+    Bin  2039 | 436.6867 MHz | 33%
+    Bin  2734 | 436.7503 MHz | 36%
+    Bin  3776 | 436.8457 MHz | 37%
+    Bin  3777 | 436.8458 MHz | 31%
+    Bin  4819 | 436.9412 MHz | 36%
+    Bin  6209 | 437.0685 MHz | 33%
+    Bin  6556 | 437.1002 MHz | 34%
+    Bin  8294 | 437.2593 MHz | 32%
+    Bin  8641 | 437.2911 MHz | 31%
+    ... et 17 autres bins
+============================================================
+[OK] captures/spectrogram.png
+[OK] captures/spectrogram_doppler.png
+[OK] captures/spectrum_avg.png
+
+Terminé — 3 images générées.
+[OK] Segment 4 terminé
+
+[SEGMENT 5/5] 1200 → 1388s
+============================================================
+  IQ Signal → GPU Converter (streaming)
+============================================================
+  Fichier      : qb50-436500kHz-2017-05-29-182529.wav
+  Sample rate  : 3,000,000 Hz (3.0 Msps)
+  Canaux       : 2 (IQ stéréo)
+  Durée totale : 1388.1 s
+  Extraction   : 1200.0s → 1388.0s (188.0s)
+  Streaming vers signal_seg5.bin...
+[48;5;0m[38;5;207m[wav @ 0x55c8e65da880] [0m[48;5;0m[38;5;226mEstimating duration from bitrate, this may be inaccurate
+[0m[48;5;0m[38;5;226mGuessed Channel Layout for Input Stream #0.0 : stereo
+[0m  [OK] 564,000,000 IQ samples (4512.0 MB)
+  Config JSON  : signal_seg5_config.json
+
+  FFT_SIZE        : 32768 bins
+  Résolution FFT  : 91.6 Hz/bin
+  Doppler ±10 kHz ≈ ±109 bins
+  Centre freq     : 436.5 MHz
+============================================================
+GPU Radio Signal Processing
+
+[GPU 0] NVIDIA GeForce RTX 3050 Ti Laptop GPU | Arch 8.6 | VRAM 3772 MB
+[CONFIG] JSON chargé : 3000000.0 Hz, FFT_SIZE=32768
+
+[CONFIG] Fichier cible   : signal_seg5.bin
+[CONFIG] Fenêtre         : Blackman-Harris
+[CONFIG] Sample Rate     : 3000000.0 Hz
+[CONFIG] FFT Size        : 32768
+[CONFIG] FFTs/Batch      : 341 (VRAM optimisé)
+[CONFIG] Passe-bande     : 0.00 — 1500000.00 Hz
+[CONFIG] CFAR guard/ref  : 4 / 16, seuil 10.0 dB
+[CONFIG] Sparse seuil   : -30.0 dB
+
+--- Chargement signal_seg5.bin (streaming) ---
+[INFO] 564000000 IQ samples | 4303.0 MB
+
+Mode Full Streaming activé
+[INFO] 51 batches (50×11173888 + 5305600 restants)
+
+Pipeline asynchrone H2D ∥ Compute ∥ D2H
+
+--- Pipeline en cours ---
+[BATCH   1/ 51] Streaming OK | Offset:          0 | Samples: 11173888
+[BATCH   2/ 51] Streaming OK | Offset:   11173888 | Samples: 11173888
+[BATCH   3/ 51] Streaming OK | Offset:   22347776 | Samples: 11173888
+[BATCH   4/ 51] Streaming OK | Offset:   33521664 | Samples: 11173888
+[BATCH   5/ 51] Streaming OK | Offset:   44695552 | Samples: 11173888
+[BATCH   6/ 51] Streaming OK | Offset:   55869440 | Samples: 11173888
+[BATCH   7/ 51] Streaming OK | Offset:   67043328 | Samples: 11173888
+[BATCH   8/ 51] Streaming OK | Offset:   78217216 | Samples: 11173888
+[BATCH   9/ 51] Streaming OK | Offset:   89391104 | Samples: 11173888
+[BATCH  10/ 51] Streaming OK | Offset:  100564992 | Samples: 11173888
+[BATCH  11/ 51] Streaming OK | Offset:  111738880 | Samples: 11173888
+[BATCH  12/ 51] Streaming OK | Offset:  122912768 | Samples: 11173888
+[BATCH  13/ 51] Streaming OK | Offset:  134086656 | Samples: 11173888
+[BATCH  14/ 51] Streaming OK | Offset:  145260544 | Samples: 11173888
+[BATCH  15/ 51] Streaming OK | Offset:  156434432 | Samples: 11173888
+[BATCH  16/ 51] Streaming OK | Offset:  167608320 | Samples: 11173888
+[BATCH  17/ 51] Streaming OK | Offset:  178782208 | Samples: 11173888
+[BATCH  18/ 51] Streaming OK | Offset:  189956096 | Samples: 11173888
+[BATCH  19/ 51] Streaming OK | Offset:  201129984 | Samples: 11173888
+[BATCH  20/ 51] Streaming OK | Offset:  212303872 | Samples: 11173888
+[BATCH  21/ 51] Streaming OK | Offset:  223477760 | Samples: 11173888
+[BATCH  22/ 51] Streaming OK | Offset:  234651648 | Samples: 11173888
+[BATCH  23/ 51] Streaming OK | Offset:  245825536 | Samples: 11173888
+[BATCH  24/ 51] Streaming OK | Offset:  256999424 | Samples: 11173888
+[BATCH  25/ 51] Streaming OK | Offset:  268173312 | Samples: 11173888
+[BATCH  26/ 51] Streaming OK | Offset:  279347200 | Samples: 11173888
+[BATCH  27/ 51] Streaming OK | Offset:  290521088 | Samples: 11173888
+[BATCH  28/ 51] Streaming OK | Offset:  301694976 | Samples: 11173888
+[BATCH  29/ 51] Streaming OK | Offset:  312868864 | Samples: 11173888
+[BATCH  30/ 51] Streaming OK | Offset:  324042752 | Samples: 11173888
+[BATCH  31/ 51] Streaming OK | Offset:  335216640 | Samples: 11173888
+[BATCH  32/ 51] Streaming OK | Offset:  346390528 | Samples: 11173888
+[BATCH  33/ 51] Streaming OK | Offset:  357564416 | Samples: 11173888
+[BATCH  34/ 51] Streaming OK | Offset:  368738304 | Samples: 11173888
+[BATCH  35/ 51] Streaming OK | Offset:  379912192 | Samples: 11173888
+[BATCH  36/ 51] Streaming OK | Offset:  391086080 | Samples: 11173888
+[BATCH  37/ 51] Streaming OK | Offset:  402259968 | Samples: 11173888
+[BATCH  38/ 51] Streaming OK | Offset:  413433856 | Samples: 11173888
+[BATCH  39/ 51] Streaming OK | Offset:  424607744 | Samples: 11173888
+[BATCH  40/ 51] Streaming OK | Offset:  435781632 | Samples: 11173888
+[BATCH  41/ 51] Streaming OK | Offset:  446955520 | Samples: 11173888
+[BATCH  42/ 51] Streaming OK | Offset:  458129408 | Samples: 11173888
+[BATCH  43/ 51] Streaming OK | Offset:  469303296 | Samples: 11173888
+[BATCH  44/ 51] Streaming OK | Offset:  480477184 | Samples: 11173888
+[BATCH  45/ 51] Streaming OK | Offset:  491651072 | Samples: 11173888
+[BATCH  46/ 51] Streaming OK | Offset:  502824960 | Samples: 11173888
+[BATCH  47/ 51] Streaming OK | Offset:  513998848 | Samples: 11173888
+[BATCH  48/ 51] Streaming OK | Offset:  525172736 | Samples: 11173888
+[BATCH  49/ 51] Streaming OK | Offset:  536346624 | Samples: 11173888
+[BATCH  50/ 51] Streaming OK | Offset:  547520512 | Samples: 11173888
+[BATCH  51/ 51] Streaming OK | Offset:  558694400 | Samples:  5305600
+
+╔══════════════════════════════════════════════════════════════╗
+║                   Détections CA-CFAR                        ║
+╚══════════════════════════════════════════════════════════════╝
+  [DÉTECTION] Bin 16367 | 1.498 MHz | présent 30% FFTs
+  [DÉTECTION] Bin 16368 | 1.499 MHz | présent 53% FFTs
+  [DÉTECTION] Bin 16369 | 1.499 MHz | présent 71% FFTs
+  [DÉTECTION] Bin 16370 | 1.499 MHz | présent 85% FFTs
+  [DÉTECTION] Bin 16371 | 1.499 MHz | présent 92% FFTs
+  [DÉTECTION] Bin 16372 | 1.499 MHz | présent 96% FFTs
+  [DÉTECTION] Bin 16373 | 1.499 MHz | présent 98% FFTs
+  [DÉTECTION] Bin 16374 | 1.499 MHz | présent 99% FFTs
+  [DÉTECTION] Bin 16375 | 1.499 MHz | présent 99% FFTs
+  [DÉTECTION] Bin 16376 | 1.499 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16377 | 1.499 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16378 | 1.499 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16379 | 1.500 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16380 | 1.500 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16381 | 1.500 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16382 | 1.500 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16383 | 1.500 MHz | présent 100% FFTs
+  [DÉTECTION] Bin 16384 | 1.500 MHz | présent 100% FFTs
+Analyse de Performance GPU
+Pipeline Total       : 12823.72 ms
+Débit global         :    44.0 MSamples/sec
+Fenêtrage Blackman-Harris : 18.846 ms
+cuFFT C2C Batch        :  2.163 ms
+Filtre Passe-Bande     :  0.265 ms
+Magnitude (dB)         :  0.808 ms
+Détection CA-CFAR      :  1.089 ms
+
+[OK] Fichiers binaires sauvegardés incrémentalement.
+
+[SUCCESS] Pipeline GPU terminé avec succès !
+Chargement output_spectrogram.bin...
+Sparse: 281,755,240 bins conservés / 563,970,048 (49.96%)
+============================================================
+  RAPPORT SPECTROGRAMME - ANALYSE DOPPLER
+============================================================
+  Source          : qb50-436500kHz-2017-05-29-182529.wav
+  FFTs total      : 17211
+  FFT size        : 32768 bins
+  Résolution freq : 91.6 Hz/bin (0.092 kHz)
+  Durée couverte  : 187.99 s
+  Plage spectrale : 436.500 — 438.000 MHz
+  Centre freq     : 436.500 MHz
+  Magnitude       : -100.0 / 35.0 dB
+
+  Doppler ±10 kHz = ±109 bins visibles
+
+  CFAR : 17 bins persistants (>30% FFTs)
+    Bin 16367 | 437.9984 MHz | 30%
+    Bin 16368 | 437.9985 MHz | 53%
+    Bin 16369 | 437.9986 MHz | 71%
+    Bin 16370 | 437.9987 MHz | 85%
+    Bin 16371 | 437.9988 MHz | 92%
+    Bin 16372 | 437.9989 MHz | 96%
+    Bin 16373 | 437.9990 MHz | 98%
+    Bin 16374 | 437.9991 MHz | 99%
+    Bin 16375 | 437.9992 MHz | 99%
+    Bin 16376 | 437.9993 MHz | 100%
+    ... et 7 autres bins
+============================================================
+[OK] captures/spectrogram.png
+[OK] captures/spectrogram_doppler.png
+[OK] captures/spectrum_avg.png
+
+Terminé — 3 images générées.
+[OK] Segment 5 terminé
+==========================================
+Tous les segments traités !
+==========================================
+
+[INFO] Found 5 segment(s)
+[INFO] Loading images...
+  ✓ captures/spectrogram_seg1.png ((1800, 1000))
+  ✓ captures/spectrogram_seg2.png ((1800, 1000))
+  ✓ captures/spectrogram_seg3.png ((1800, 1000))
+  ✓ captures/spectrogram_seg4.png ((1800, 1000))
+  ✓ captures/spectrogram_seg5.png ((1800, 1000))
+[INFO] Creating montage: 1800 × 5000 px
+[INFO] Assembling timeline...
+[INFO] Saving montage to captures/spectrogram_full_timeline.png...
+
+✓ Assembly complete!
+  Output: captures/spectrogram_full_timeline.png
+  Size: (1800, 5000)
+  Segments: 5
+  Total duration: 1388s
+
+Résultats générés dans le dossier captures/ :
+10
+fichiers PNG (segments)
+Fichier de vision globale : captures/spectrogram_full_timeline.png
+[?2004h
+[38;2;59;66;82m[0m[48;2;59;66;82muser [48;2;67;76;94;38;2;59;66;82m[0m[48;2;67;76;94m …/Projet_GPU_Radio [48;2;76;86;106;38;2;67;76;94m[0m[48;2;76;86;106m  main ✘!? [48;2;134;187;216;38;2;76;86;106m[48;2;6;150;154;38;2;134;187;216m[48;2;51;101;138;38;2;6;150;154m[0m[48;2;51;101;138m 11:07 [0m[38;2;51;101;138m [0m./[K[K[?5h[?5lpython3 [K[K[K[K[K[K[K[K[?5h[?5l[?5h[?5l[?5h[?5lexit
+[?2004lexit
+
+Script done on 2026-04-10 11:09:11+02:00 [COMMAND_EXIT_CODE="0"]

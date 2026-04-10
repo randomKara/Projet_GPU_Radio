@@ -25,8 +25,9 @@ The project is based on IQ recordings of the **QB50 satellite constellation**.
 *   **Zenodo Repository**: [Zenodo Record 6402965](https://zenodo.org/record/6402965#.YkYSTIrtaCg)
 
 ## 3. Platform & Technologies
+- **OS Requirement:** Linux (Ubuntu 22.04+ recommended).
 - **Hardware:** Laptop with NVIDIA GeForce RTX 3050 Ti (Ampere Architecture).
-- **Languages:** C++/CUDA for the compute engine, Python for simulation and visualization.
+- **Languages:** C++/CUDA for the compute engine, Python for signal conversion and visualization.
 - **Libraries:** cuFFT (Fast Fourier Transform), NumPy, Pillow (PIL).
 
 ## 4. Logical Steps of the Pipeline
@@ -54,3 +55,4 @@ When converting this report to PDF, please include the following captures from t
 2.  **captures/spectrogram_doppler_seg3.png**: A clear zoom showing the characteristic Doppler curve.
 3.  **captures/spectrum_avg_seg5.png**: The average power spectrum and the CA-CFAR persistence profile.
 4.  **Terminal Output**: A screenshot showing the execution throughput in **MSamples/sec**.
+5.  **Execution Log**: See `record.log` for a full trace of the execution on my machine, including memory usage and GPU performance metrics.

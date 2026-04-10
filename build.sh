@@ -16,9 +16,9 @@ make
 
 if [ $? -eq 0 ]; then
     echo ""
-    echo "Build successful! Running radio_fft..."
+    echo "Build successful!"
+    echo "To run with satellite data, use: ./process_qb50_segments.sh"
     echo ""
-    ./radio_fft
 else
     echo "Build failed!"
     exit 1

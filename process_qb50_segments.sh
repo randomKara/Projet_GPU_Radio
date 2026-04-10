@@ -45,11 +45,16 @@ for SEG in $(seq 1 $NUM_SEGMENTS); do
     echo "[OK] Segment $SEG terminé"
 done
 
-echo ""
 echo "=========================================="
 echo "Tous les segments traités !"
 echo "=========================================="
 echo ""
-echo "Résultats générés:"
-ls -lh spectrogram_seg*.png spectrum_avg_seg*.png 2>/dev/null | wc -l
-echo "fichiers PNG"
+
+# Assemblage de la vision d'ensemble
+python3 assemble_results.py
+
+echo ""
+echo "Résultats générés dans le dossier captures/ :"
+ls -lh captures/spectrogram_seg*.png captures/spectrum_avg_seg*.png 2>/dev/null | wc -l
+echo "fichiers PNG (segments)"
+echo "Fichier de vision globale : captures/spectrogram_full_timeline.png"
