@@ -1,61 +1,62 @@
-# GPU Radio Signal Processing (QB50 Satellites)
+# Project Report: GPU-Accelerated Radio Signal Processing
 
-## Overview
-This project implements a high-performance signal processing pipeline using CUDA for real-time (or accelerated) analysis of radio waves. It was designed to handle large datasets from SDR (Software Defined Radio) recordings with a focus on Doppler shift detection for Low Earth Orbit (LEO) satellites.
+**Participants:** Gabriel GAUTIER, Maxime BORGHINI
 
-**Topic**: GPU FFT processing for radio waves (Implementation Difficulty: 6/10)
+## 1. Subject 5: GPU FFT processing for radio waves
+**Difficulty:** 6
+> *Implementing Fast Fourier Transform (FFT) on the GPU is a well-understood problem but applying it to process radio waves effectively...*
 
-## Dataset
-To run the full pipeline, download the sample SDR recording:
-- **Download link**: [Zenodo Dataset](https://zenodo.org/records/6402965#.YkYSTIrtaCg)
-- **Description**: This is an IQ recording of the QB50 satellite constellation, captured via SatNOGS. QB50 was a network of CubeSats used for thermosphere research. The recording is in stereo WAV format (3 Msps), where the left and right channels represent the I and Q components of the signal.
+### Project Overview
+This project implements a high-performance signal processing pipeline designed to handle massive Software-Defined Radio (SDR) recordings from Low Earth Orbit (LEO) satellites. It specifically targets the **QB50 satellite constellation**, providing an automated workflow to detect satellite passes, analyze Doppler shifts, and generate high-resolution waterfall spectrograms. By leveraging **NVIDIA CUDA**, the engine performs complex spectral analysis at speeds significantly exceeding real-time, even for datasets (like the 16GB QB50 recording) that exceed available system RAM.
 
-## Features
-- **GPU accelerated FFT**: High-speed processing of interleaved IQ data using cuFFT.
-- **Asynchronous Pipeline**: Overlapping Host-to-Device transfers, GPU computation, and Device-to-Host results using CUDA streams.
-- **Streaming Architecture**: Optimized for stability with massive files (~16 GB+) using an incremental disk-writing mechanism to prevent OOM (Out Of Memory) issues.
-- **CA-CFAR Detection**: Cell-Averaging Constant False Alarm Rate adaptive thresholding for signal detection in noisy environments.
-- **Doppler Visualization**: Automated generation of high-contrast spectrograms and Doppler-zoomed waterfalls.
+### How we met the requirements
+To address the "effective processing" aspect of the subject, we implemented several advanced features:
+*   **Throughput Optimization**: Used an **Asynchronous Pipeline** with CUDA Streams to overlap Host-to-Device transfers, Kernels computation, and Device-to-Host transfers. This ensures the GPU is never idle.
+*   **Memory Efficiency**: Developed a **Streaming Architecture** that processes data in batches. This allows the system to analyze a 16GB recording on a machine with limited VRAM/RAM by writing results incrementally to disk.
+*   **Advanced Signal Analysis**:
+    *   **Multi-windowing**: Support for Hamming, Blackman-Harris, and Hann windows to minimize spectral leakage.
+    *   **CA-CFAR (Cell-Averaging Constant False Alarm Rate)**: An adaptive thresholding algorithm implemented on GPU to detect signals vs noise automatically.
+    *   **Real-time Bandpass Filter**: Frequency-domain filtering performed post-FFT to isolate satellite transmissions.
 
-## Hardware Specifications (Target Machine)
-This pipeline is optimized for the following configuration:
-- **CPU**: 16-core system.
-- **RAM**: 32 GB (31 GiB available).
-- **GPU**: NVIDIA GeForce RTX 3050 Ti Laptop (Ampere architecture, 4GB VRAM).
-- **Optimization**: The code specifically targets the available 31GB RAM by maintaining a memory footprint of ~8GB per 300s segment, preventing OOM crashes while maintaining high PCIe throughput.
+## 2. Dataset & External Sources
+The project is based on IQ recordings of the **QB50 satellite constellation**.
+*   **Direct Download (16GB .wav)**: [qb50-436500kHz-2017-05-29-182529.wav](https://zenodo.org/records/6402965/files/qb50-436500kHz-2017-05-29-182529.wav?download=1)
+*   **Source Citation**: [Dani Estevez - An STRF crash course](https://destevez.net/2019/01/an-strf-crash-course/)
+*   **Zenodo Repository**: [Zenodo Record 6402965](https://zenodo.org/record/6402965#.YkYSTIrtaCg)
 
-## Visualization Guide
-The pipeline generates three primary visualizations via `plot_spectrogram.py`:
+## 3. Platform & Technologies
+- **OS Requirement:** Linux (Ubuntu 22.04+ recommended).
+- **Hardware:** Laptop with NVIDIA GeForce RTX 3050 Ti (Ampere Architecture).
+- **Languages:** C++/CUDA for the compute engine, Python for signal conversion and visualization.
+- **Libraries:** cuFFT (Fast Fourier Transform), NumPy, Pillow (PIL).
 
-### 1. `spectrogram.png` (Waterfall Spectrogram)
-- **What it is**: A standard waterfall plot showing frequency vs. time.
-- **Construction**: Aggregates FFT magnitudes from the whole segment. Values are normalized using the 1st and 99th percentiles to maximize contrast. 
-- **Colormap**: Uses a custom `DOPPLER_CMAP` (dark blue to red) designed for highlighting faint signals against thermal noise.
+## 4. Logical Steps of the Pipeline
+1.  **Data Ingestion**: Converting SatNOGS WAV files to raw Complex Float32 binary IQ format.
+2.  **GPU Streaming**: Loading small batches into Pinned Memory for fast PCIe transfer.
+3.  **Spectral Analysis**: Applying Windowing and performing FFT via cuFFT.
+4.  **GPU Filtering**: Zeroing out-of-band bins in the frequency domain.
+5.  **Adaptive Detection**: Running the CA-CFAR kernel to flag significant signal presence.
+6.  **Sparse Compression**: Exporting only high-magnitude bins to reduce disk I/O and D2H overhead.
+7.  **Visualization**: Generating waterfall spectrograms with automated Doppler-shift zooming.
 
-### 2. `spectrogram_doppler.png` (Analysis Zoom)
-- **What it is**: An automated zoom on the most "interesting" parts of the spectrum.
-- **Construction**: A heuristic algorithm calculates the **variance and average power** for each frequency bin. Bins with high variability (indicating a passing satellite with Doppler shift) are automatically detected and cropped.
-- **Purpose**: Directly identifies and visualizes satellite passes without manual searching.
+## 5. Execution Guide
+1.  **Compilation:**
+    ```bash
+    ./build.sh
+    ```
+2.  **Processing:**
+    ```bash
+    ./process_qb50_segments.sh
+    ```
 
-### 3. `spectrum_avg.png` (Spectral Power & Persistence)
-- **What it is**: A dual-plot showing the average spectral shape and detection statistics.
-- **Top Plot**: Average magnitude (dB) across the segment. Shows the effect of the **GPU Bandpass Filter** (Blue: Raw, Red: Filtered).
-- **Bottom Plot**: **CA-CFAR Persistence**. Shows the percentage of time a specific frequency exceeded the adaptive noise floor. Signals persistent for >30% of the time are flagged as detections.
-
-## Installation & Usage
-1. **Requirements**: 
-   - **OS**: Linux (Ubuntu 22.04+ recommended)
-   - **Hardware**: NVIDIA GPU (Compute Capability 6.1+)
-   - **Software**: CUDA Toolkit (12.x or 13.x), CMake, Python 3 (NumPy, Pillow), ffmpeg.
-2. **Build**:
-   ```bash
-   ./build.sh
-   ```
-3. **Run**:
-   Place the QB50 `.wav` file in the project root and execute the segment processing script:
-   ```bash
-   ./process_qb50_segments.sh
-   ```
-
----
-*GPU Radio Project - 2026 (Linux / CUDA)*
+## 6. Recommended Screenshots for Evaluation
+When converting this report to PDF, please include the following captures from the `captures/` folder:
+1.  **captures/spectrogram_full_timeline.png**: The global overview of the satellite pass.
+![alt text](captures/spectrogram_full_timeline.png)
+2.  **captures/spectrogram_doppler_seg3.png**: A clear zoom showing the characteristic Doppler curve.
+![alt text](captures/spectrogram_doppler_seg3.png)
+3.  **captures/spectrum_avg_seg5.png**: The average power spectrum and the CA-CFAR persistence profile.
+![alt text](captures/spectrum_avg_seg5.png)
+4.  **Terminal Output**:
+![alt text](image/finaloutput.png)
+5.  **Execution Log**: See `record.log` for a full trace of the execution on my machine.
